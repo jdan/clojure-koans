@@ -6,5 +6,6 @@
   :profiles {:dev {:dependencies [[lein-koan "0.1.4"]]}}
   :repl-options {:init-ns koan-engine.runner
                  :init ^:displace (do (use '[koan-engine.core]))}
-  :plugins [[lein-koan "0.1.4"]]
+  :plugins [[lein-koan "0.1.4"]
+            [lein-cljfmt "0.5.7"]]
   :main koan-engine.runner/exec)
